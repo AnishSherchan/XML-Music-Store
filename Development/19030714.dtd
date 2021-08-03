@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author Anish Sherchan
+uni id: 19030714
+-->
+<!-- Start of dtd file-->
+<!ATTLIST Mystore xmlns:xsi CDATA #REQUIRED xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
+<!ELEMENT Mystore (header,Collections,footer)>
+<!ELEMENT header (Storedetails,menus)>
+<!ELEMENT Storedetails (Storename,address_1,Phone_number,urls)>
+<!ELEMENT Storename (#PCDATA)>
+<!ELEMENT address_1 (#PCDATA)> 
+<!ELEMENT Phone_number (#PCDATA)>
+<!ELEMENT urls (#PCDATA)>
+<!ELEMENT menus (logo,StoreName+,bars)>
+<!ELEMENT logo (#PCDATA)>
+<!ELEMENT StoreName (#PCDATA)>
+<!ATTLIST logo id ID #REQUIRED>
+<!ELEMENT bars (home,shop,seprator,listen,download)>
+<!ELEMENT home (#PCDATA)>
+<!ELEMENT shop (#PCDATA)> 
+<!ELEMENT seprator (#PCDATA)>
+<!ELEMENT listen (#PCDATA)>
+<!ELEMENT download (#PCDATA)>
+
+<!ELEMENT Collections (Featuring,songs)>
+<!ELEMENT Featuring (#PCDATA)>
+<!ELEMENT songs (Filters+,song+)>
+<!ELEMENT footer (#PCDATA)>
+<!ATTLIST footer id ID #REQUIRED>
+<!ELEMENT Filters (#PCDATA)>
+<!ATTLIST Filters id ID #REQUIRED>
+<!ELEMENT song (Cover,Head,SongDescription)>
+<!ATTLIST song id ID #REQUIRED>
+<!ATTLIST song song_id CDATA #REQUIRED>
+<!ATTLIST song Listtype CDATA #REQUIRED>
+<!ATTLIST song Musictype CDATA #REQUIRED>
+<!ATTLIST song beatspermin CDATA #REQUIRED>
+<!ATTLIST song rating CDATA #REQUIRED>
+<!ATTLIST song views CDATA #IMPLIED>
+
+<!ELEMENT Cover (#PCDATA)>
+<!ELEMENT Head (#PCDATA)>
+<!ATTLIST Cover id ID #REQUIRED>
+<!ATTLIST Head id ID #REQUIRED>
+
+<!ELEMENT SongDescription (Songname,Genre,Director?,Producer,band?,Writer,Singer?,Date,length,MusicVideo?,Tiktok?,Website?)>
+<!ATTLIST SongDescription id CDATA #REQUIRED>
+<!ELEMENT Songname (#PCDATA)>
+<!ELEMENT Genre (#PCDATA)>
+<!ELEMENT Director (#PCDATA)>
+<!ELEMENT Producer (#PCDATA)>
+<!ELEMENT band (#PCDATA)>
+<!ELEMENT Writer (#PCDATA)>
+<!ELEMENT Singer (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT length (#PCDATA)>
+<!ELEMENT Website (#PCDATA)>
+<!ELEMENT MusicVideo (#PCDATA)>
+<!ELEMENT Tiktok (#PCDATA)>

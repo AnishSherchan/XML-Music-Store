@@ -1,0 +1,597 @@
+Mystore {
+  /*Defining height and display property for mystore */
+  display: grid;
+  height: 250vh;
+}
+header {
+  /* Defining all necesssary elements for heading  */
+  top: 0rem;
+  overflow: hidden;
+  position: sticky;
+  display: grid;
+  grid-template-rows: 25% 75%;
+  background-color: aqua;
+  height: 170px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+Storedetails {
+  /* Desining view for store info to be shown*/
+  grid-row: 1/2;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: rgb(225, 22, 60);
+}
+Storename,
+address_1,
+Phone_number,
+urls {
+  display: list-item;
+  list-style: circle;
+  font-size: 16px;
+  align-self: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(250, 255, 255);
+  margin-left: 30px;
+}
+menus {
+  grid-row: 2/3;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 50% 35%;
+  grid-template-rows: 1fr;
+}
+bars {
+  grid-column: 3/4;
+  font-size: 24px;
+  display: flex;
+  align-self: center;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: rgb(91, 5, 106);
+  justify-content: space-around;
+  padding-right: 40px;
+  font-family: Anish;
+  cursor: pointer;
+}
+#StoreLogo {
+  background-image: url(../Images/Logo.jpg);
+  display: flex;
+  grid-column: 1/2;
+  background-position: center;
+  justify-self: flex-end;
+  padding-right: 40px;
+  padding-top: 70px;
+  margin-top: 10px;
+  background-size: 80px;
+  width: 40px;
+  height: 25px;
+}
+StoreName {
+  font-size: 26px;
+  display: flex;
+  align-self: center;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: rgb(91, 5, 106);
+  font-family: Anish;
+}
+Collections {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 420px 1fr;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+Featuring {
+  width: 100%;
+  margin-left: -5px;
+  margin-right: -5px;
+  background-image: url(../Images/Screenshot\ 2021-04-26\ 210427.png);
+  background-position: -20px;
+}
+songs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  grid-template-rows: 50px 526px 526px 80px 526px 526px 80px 526px 526px 46px;
+}
+#Mostliked {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: Anish;
+  font-size: 24px;
+  font-weight: bold;
+}
+Songname,
+Genre,
+Producer,
+Singer,
+Writer,
+Date,
+length,
+Website,
+MusicVideo,
+band,
+Tiktok {
+  font-family: Anish;
+  font-size: 20px;
+}
+
+#Song1 {
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px grey;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  display: grid;
+  border: 2px solid black;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 70% 30%;
+  transition: transform 0.1s;
+}
+#Song1:hover {
+  -ms-transform: scale(0.2s);
+  -webkit-transform: scale(0.2);
+  transform: scale(1.03);
+}
+#Head1 {
+  font-weight: bold;
+  margin-top: -20px;
+}
+#Head2 {
+  margin-left: 25%;
+  font-weight: bold;
+}
+#desc1 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: grid;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  color: rgb(0, 0, 0);
+}
+Head {
+  font-family: Anish;
+  font-size: 30px;
+  color: rgb(91, 5, 106);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+#Cover1 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/imagine.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+#Song2 {
+  transition: transform 0.1s;
+  border-radius: 20px;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 50% 15% 35%;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+#Song2:hover {
+  -ms-transform: scale(0.2s);
+  -webkit-transform: scale(0.2);
+  transform: scale(1.03);
+}
+#desc2 {
+  display: grid;
+  font-family: Anish;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#Cover2 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/hopes.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+
+#Song3 {
+  border-radius: 20px;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 50% 15% 35%;
+}
+#Cover3 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/StairwayToHeaven.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+#Head3 {
+  margin-left: 25%;
+  font-weight: bold;
+}
+#desc3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+#Song4 {
+  border-radius: 20px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: grid;
+  background-color: rgb(255, 254, 254);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 50% 15% 35%;
+}
+#Cover4 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/theMan.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+#Head4 {
+  margin-left: 15%;
+  font-weight: bold;
+}
+
+#Song5 {
+  border-radius: 20px;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 50% 15% 35%;
+}
+#Cover5 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/Hotel.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+#Head5 {
+  margin-left: 30%;
+  font-weight: bold;
+}
+
+#popular {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: Anish;
+  font-size: 24px;
+  font-weight: bold;
+  grid-row: 4/5;
+  grid-column: 1/4;
+  border-top: 2px black solid;
+}
+
+#Song6 {
+  border-radius: 20px;
+  grid-column: 1/2;
+  grid-row: 5/6;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 50% 15% 35%;
+}
+#Cover6 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/metalica.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+#Head6 {
+  margin-left: 25%;
+  font-weight: bold;
+}
+
+#Song7 {
+  border-radius: 20px;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  display: grid;
+  background-color: rgb(255, 253, 253);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 50% 15% 35%;
+}
+#Cover7 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/Guns.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+#Head7 {
+  margin-left: 30%;
+  font-weight: bold;
+}
+
+#Song8 {
+  border-radius: 20px;
+  grid-column: 3/4;
+  grid-row: 5/6;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 50% 15% 35%;
+}
+#Cover8 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/Queen.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+#Head8 {
+  margin-left: 25%;
+  font-weight: bold;
+}
+
+#Song9 {
+  border-radius: 20px;
+  grid-column: 1/2;
+  grid-row: 6/7;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 50% 15% 35%;
+}
+#Cover9 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/hopes.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+#Head9 {
+  margin-left: 25%;
+  font-weight: bold;
+}
+
+#Song10 {
+  border-radius: 20px;
+  grid-column: 2/3;
+  grid-row: 6/7;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 50% 15% 35%;
+}
+#Cover10 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/Queen.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+#Head10 {
+  margin-left: 25%;
+  font-weight: bold;
+}
+
+#Song11 {
+  border-radius: 20px;
+  grid-column: 3/4;
+  grid-row: 6/7;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 50% 15% 35%;
+}
+#Cover11 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/EricClapton.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+#Head11 {
+  margin-left: 45%;
+  font-weight: bold;
+}
+
+#Ins {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: Anish;
+  font-size: 24px;
+  font-weight: bold;
+  grid-row: 7/8;
+  grid-column: 1/4;
+  border-top: 2px black solid;
+}
+
+#Song12 {
+  border-radius: 20px;
+  grid-column: 1/2;
+  grid-row: 8/9;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 50% 15% 35%;
+}
+#Cover12 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/Horizon.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+#Head12 {
+  margin-left: 28%;
+  font-weight: bold;
+}
+
+#Song13 {
+  border-radius: 20px;
+  grid-column: 2/3;
+  grid-row: 8/9;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 50% 15% 35%;
+}
+#Cover13 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/Guns.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+#Head13 {
+  margin-left: 28%;
+  font-weight: bold;
+}
+
+#Song14 {
+  border-radius: 20px;
+  grid-column: 3/4;
+  grid-row: 8/9;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  border: 2px solid black;
+  grid-template-rows: 50% 15% 35%;
+}
+#Cover14 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/21guns.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+#Head14 {
+  margin-left: 40%;
+  font-weight: bold;
+}
+
+#Song15 {
+  border-radius: 20px;
+  grid-column: 1/3;
+  grid-row: 9/10;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px grey;
+  display: grid;
+  margin-left: 150px;
+  border: 2px solid black;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 70% 30%;
+}
+#Cover15 {
+  box-shadow: 3px 3px grey;
+  background-image: url(../Images/Guns.png);
+  background-position: center;
+  background-size: 275px;
+  width: 275px;
+  height: 275px;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+#Head15 {
+  margin-left: 25%;
+  margin-top: -20px;
+  font-weight: bold;
+}
+#desc15 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: grid;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+#Footer {
+  background-color: rgb(242, 242, 242);
+  border-top: 2px black solid;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}

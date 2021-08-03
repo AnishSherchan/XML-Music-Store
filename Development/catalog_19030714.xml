@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="catalog_19030714.css" type="text/css"?>
+<!DOCTYPE Mystore SYSTEM "./19030714.dtd">
+<Mystore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./catalog_19030714.xsd">
+    <!-- This is the header part of the xml where shop details along with nav bar are kept with thier respective data-->
+    <header>
+        <Storedetails><!-- Here we keep information about the Stores whose system we're building-->
+            <Storename><!-- All informations regarding Store is kept in Cdata of XML-->
+                <![CDATA[ SherchanMusics]]></Storename>
+            <address_1><!-- All informations regarding Store is kept in Cdata of XML-->
+                <![CDATA[ Samakushi, Kathmandu]]></address_1>
+            <Phone_number><!-- All informations regarding Store is kept in Cdata of XML-->
+                <![CDATA[ Tel. number: 01-4363678]]></Phone_number>
+            <urls><!-- All informations regarding Store is kept in Cdata of XML-->
+                <![CDATA[ Website: Sherchanmusic.com]]></urls>
+        </Storedetails>
+        <menus><!-- Secondary nav for design-->
+            <logo id="StoreLogo"></logo><!-- Reusing Logo element and defining attribute called id-->
+            <StoreName>SherchanMusics</StoreName>
+            <bars><!-- Define some elements for nav bar design-->
+                <home>Home</home>
+                <shop>Shop</shop>
+                <seprator>|</seprator>
+                <listen>Listen</listen>
+                <download>Download</download>
+            </bars>
+        </menus>
+    </header><!-- End of header-->
+    <Collections>
+        <Featuring><!-- Image For feature and design--></Featuring><!-- Another parent class for 2 or 3 child classes-->
+        <songs><!-- Filrters for Muics-->
+            <Filters id="Mostliked">
+                <![CDATA[ Most Hits →]]></Filters><!-- Filrters for Muics-->
+            <Filters id="Ins">
+                <![CDATA[ Instrumental →]]></Filters><!-- Filrters for Muics-->
+            <Filters id="popular">
+                <![CDATA[ Popular new releases →]]></Filters><!-- Song 1-->
+            <song id="Song1" views="1million" song_id="Music1" Listtype="Most-liked" Musictype="InstrumentalandVocal" beatspermin="56" rating="5 stars"><!-- Detail of song-->
+                <Cover id="Cover1"></Cover>
+                <Head id="Head1">Imagine By John Lennon</Head><!-- Songs Descriptions-->
+                <SongDescription id="desc1">
+                    <Songname>Name: Imagine</Songname>
+                    <Genre>Genre: Pop</Genre>
+                    <Producer>Producer: John Lennon</Producer>
+                    <Writer>Writer: John Lennon</Writer>
+                    <Singer>Singer: John Lennon</Singer>
+                    <Date>Release Date: 17 Jan 2004</Date>
+                    <length>Length: 4:32</length>
+                    <MusicVideo >Music Video: Yes</MusicVideo>
+                    <Website>
+                        Website: Johnlennon.com
+                    </Website>
+                </SongDescription>
+            </song><!-- Song2-->
+            <song id="Song2" song_id="Music2" Listtype="Most-popular" Musictype="Instrumental" beatspermin="90" rating="4 stars"><!-- Detail of song-->
+                <Cover id="Cover2"></Cover>
+                <Head id="Head2">Stairway to Heaven</Head>
+                <SongDescription id="desc2">
+                    <Songname>Name: Stairway to heaven</Songname>
+                    <Genre>Genre: Rock</Genre>
+                    <Producer>Producer: Jimmy Page</Producer>
+                    <band>Band: Led Zeppelin</band>
+                    <Writer>Writer: Jimmy Page Robert Plant</Writer>
+                    <Date>Release Date: 8 November 1971</Date>
+                    <length>Length: 8:02</length>
+                    <Tiktok>
+                        Tiktok: Yes
+                    </Tiktok>
+                </SongDescription>
+            </song><!-- Song number 3-->
+            <song id="Song3" song_id="Music3" views="1million" Listtype="Most-Listen" Musictype="Vocal" beatspermin="45" rating="4.4 stars"><!-- Detail of song-->
+                <Cover id="Cover3"></Cover>
+                <Head id="Head3">Stairway to Heaven</Head>
+                <SongDescription id="desc2">
+                    <Songname>Name: High Hopes</Songname>
+                    <Genre>Genre: Progressive rock</Genre>
+                    <Producer>Producer: Bob Ezrin, David Gilmour</Producer>
+                    <band>Band: PinkFloyd</band>
+                    <Writer>Writer :David Gilmour, Polly Samson</Writer>
+                    <Date>Release Date: 17 October 1994</Date>
+                    <length>Length: 8:34 (album version)</length>
+                    <Website>
+                        Website: PinkFloyd.com
+                    </Website>
+                </SongDescription>
+            </song><!-- Song number 4-->
+            <song id="Song4" song_id="Music4" Listtype="Most-Liked" Musictype="Instrumental" beatspermin="55" rating="5 stars"><!-- Detail of song-->
+                <Cover id="Cover4"></Cover>
+                <Head id="Head4">The Man Who Sold The World</Head>
+                <SongDescription id="desc2">
+                    <Songname>Name: The man who sold the world</Songname>
+                    <Genre>Genre: Pop</Genre>
+                    <Producer>Producer: Halen Beals</Producer>
+                    <band>Band: Nirvana</band>
+                    <Writer>killer Heasm</Writer>
+                    <Date>Release Date: 17 Jan 2002</Date>
+                    <length>Length: 4:32</length>
+                    <MusicVideo>Music Video: Yes</MusicVideo>
+                </SongDescription>
+            </song><!-- Song number 5-->
+            <song id="Song5" song_id="Music5" Listtype="Most-Liked" Musictype="Instrumental" beatspermin="55" rating="5 stars"><!-- Detail of song-->
+                <Cover id="Cover5"></Cover>
+                <Head id="Head5">Hotel California</Head>
+                <SongDescription id="desc2">
+                    <Songname>Name: Hotel California</Songname>
+                    <Genre>Genre: Pop</Genre>
+                    <Producer>Producer: Oggy Page</Producer>
+                    <band>Band: Egales</band>
+                    <Writer>Writer: Jimmy Page</Writer>
+                    <Date>Release Date: 8 November 1995</Date>
+                    <length>Length: 6:02</length>
+                </SongDescription>
+            </song><!-- Song number6-->
+            <song id="Song6" song_id="Music6" Listtype="Most-popular" Musictype="Instrumental" beatspermin="90" rating="4 stars"><!-- Detail of song-->
+                <Cover id="Cover6"></Cover>
+                <Head id="Head6">Nothing Else Matter</Head>
+                <SongDescription id="desc2">
+                    <Songname>Name: Nothing Else Matters</Songname>
+                    <Genre>Genre: Rock</Genre>
+                    <Producer>Producer: Halen Beals</Producer>
+                    <band>Band: Metalica</band>
+                    <Writer>Writer: Queens Heasm</Writer>
+                    <Date>Release Date: 17 Jan 1994</Date>
+                    <length>Length: 4:32</length>
+                </SongDescription>
+            </song><!-- Song number7-->
+            <song id="Song7" song_id="Music7" Listtype="Most-popular" Musictype="Instrumental" beatspermin="90" rating="4 stars"><!-- Detail of song-->
+                <Cover id="Cover7"></Cover>
+                <Head id="Head7">November Rain</Head>
+                <SongDescription id="desc2">
+                    <Songname>Song Name: November Rain</Songname>
+                    <Genre>Genre: Progressive rock</Genre>
+                    <Producer>Producer: Jack Mou</Producer>
+                    <band>Band: Guns and Roses</band>
+                    <Writer>Writer: Roger Pikks</Writer>
+                    <Date>Release Date: 12 September 2000</Date>
+                    <length>Length:  8:55</length>
+                </SongDescription>
+            </song><!-- Song number8-->
+            <song id="Song8" song_id="Music8" Listtype="Most-Liked" Musictype="Instrumental" beatspermin="55" rating="5 stars"><!-- Detail of song-->
+                <Cover id="Cover8"></Cover>
+                <Head id="Head8">Bohemian Rhapsody</Head>
+                <SongDescription id="desc2">
+                    <Songname>Name: Bohemian Rhapsody</Songname>
+                    <Genre>Genre: Rock</Genre>
+                    <Producer>Producer: Freedi Mecury</Producer>
+                    <band>Band: Queen</band>
+                    <Writer>Writer: Freedi Mercury</Writer>
+                    <Date>Release Date: 17 Jan 2000</Date>
+                    <length>Length: 8:32</length>
+                </SongDescription>
+            </song><!-- Song number9-->
+            <song id="Song9" song_id="Music9" Listtype="Most-liked" Musictype="InstrumentalandVocal" beatspermin="56" rating="5 stars"><!-- Detail of song-->
+                <Cover id="Cover9"></Cover>
+                <Head id="Head9">Wish you were here</Head>
+                <SongDescription id="desc2">
+                    <Songname>Name: Wish you were here</Songname>
+                    <Genre>Genre: Progressive rock</Genre>
+                    <Producer>Producer: David Leland</Producer>
+                    <band>Band: Pinkfloyd</band>
+                    <Writer>Writer: Roger Waters</Writer>
+                    <Date>Release Date: 12 September 1975</Date>
+                    <length>Length:  4:55</length>
+                    <Website>
+                        Website:
+                        PinkFloyd.com
+                    </Website>
+                </SongDescription>
+            </song><!-- Song number10-->
+            <song id="Song10" song_id="Music10" Listtype="Most-popular" Musictype="Instrumental" beatspermin="90" rating="4 stars"><!-- Detail of song-->
+                <Cover id="Cover10"></Cover>
+                <Head id="Head10">Somebody to Love</Head>
+                <SongDescription id="desc2">
+                    <Songname>Name: Somebody to Love</Songname>
+                    <Genre>Genre: Rock</Genre>
+                    <Director> Director: Bruce Gowers</Director>
+                    <Producer>Producer: Queen</Producer>
+                    <band>Band: Queen</band>
+                    <Writer>Writer: Freddie Mercury</Writer>
+                    <Date>Release Date: 12 Nov 1976</Date>
+                    <length>Length: 2:25</length>
+                    <MusicVideo>Music Video: Yes</MusicVideo>
+                    <Tiktok>
+                        Tiktok: Yes
+                    </Tiktok>
+                </SongDescription>
+            </song><!-- Song number11-->
+            <song id="Song11" song_id="Music11" Listtype="Most-Liked" Musictype="Instrumental" beatspermin="55" rating="5 stars"><!-- Detail of song-->
+                <Cover id="Cover11"></Cover>
+                <Head id="Head11">Layla</Head>
+                <SongDescription id="desc2">
+                    <Songname>Name: Layla</Songname>
+                    <Genre>Genre: Classic Rock</Genre>
+                    <Producer>Producer: Tom David</Producer>
+                    <Writer>Writer: Eric Clapton</Writer>
+                    <Singer>Singer: Eric Clapton</Singer>
+                    <Date>Release Date: March 1971</Date>
+                    <length>Length: 4:55</length>
+                </SongDescription>
+            </song><!-- Filtering new Datas--><!-- Song number12-->
+            <song id="Song12" song_id="Music12" Listtype="Most-liked" Musictype="InstrumentalandVocal" beatspermin="56" rating="5 stars"><!-- Detail of song-->
+                <Cover id="Cover12"></Cover>
+                <Head id="Head12">Take me to Church</Head>
+                <SongDescription id="desc2">
+                    <Songname>Name: Take me to Church</Songname>
+                    <Genre>Genre: Pop</Genre>
+                    <Producer>Producer: Rob Kirwan</Producer>
+                    <Writer>Writer: Andrew Byrne</Writer>
+                    <Singer>Singer: Horizon</Singer>
+                    <Date>Release Date: 6 March 2019</Date>
+                    <length>Length: 4:55</length>
+                </SongDescription>
+            </song><!-- Song number 13-->
+            <song id="Song13" song_id="Music13" Listtype="Most-popular" Musictype="Instrumental" beatspermin="90" rating="4 stars"><!-- Detail of song-->
+                <Cover id="Cover13"></Cover>
+                <Head id="Head13">Sweet Child Of Mine</Head>
+                <SongDescription id="desc2">
+                    <Songname>Name: Sweet Child Of Mine</Songname>
+                    <Genre>Genre: Rock</Genre>
+                    <Director> Director: nigel Dick</Director>
+                    <Producer>Producer: Mike Clink</Producer>
+                    <band>Band: Guns and Roses</band>
+                    <Writer>Writer: Guns and Roses</Writer>
+                    <Date>Release Date: 12 Nov 2000</Date>
+                    <length>Length: 6:25</length>
+                    <MusicVideo>Music Video: Yes</MusicVideo>
+                    <Tiktok>
+                        Tiktok: Yes
+                    </Tiktok>
+                </SongDescription>
+            </song><!-- Song number 14-->
+            <song id="Song14" song_id="Music13" Listtype="Most-popular" Musictype="Instrumental" beatspermin="90" rating="4 stars"><!-- Detail of song-->
+                <Cover id="Cover14"></Cover>
+                <Head id="Head14">21 Guns</Head>
+                <SongDescription id="desc2">
+                    <Songname>Name: 21 Guns</Songname>
+                    <Genre>Genre: Pop</Genre>
+                    <Director>Director: Ben Hlakaty</Director>
+                    <Producer>Proucer: Butch bell</Producer>
+                    <band>Band: Greenday</band>
+                    <Writer>Writer: GreenDay</Writer>
+                    <Date>Release Date: 2003</Date>
+                    <length>Length: 5:21</length>
+                    <MusicVideo>Music Video: Yes</MusicVideo>
+                </SongDescription>
+            </song><!-- Song number 15-->
+            <song id="Song15" song_id="Music13" Listtype="Most-popular" Musictype="Instrumental" beatspermin="90" rating="4 stars"><!-- Detail of song-->
+                <Cover id="Cover15"></Cover>
+                <Head id="Head15">Thunderstruck</Head>
+                <SongDescription id="desc15">
+                    <Songname>Name: Thunderstruck</Songname>
+                    <Genre>Genre: Heavy Metal</Genre>
+                    <Director> Director: Bruce Buffer</Director>
+                    <Producer>Producer: Buffer Clink</Producer>
+                    <band>Band: ACDC</band>
+                    <Writer>Writer: ACDC</Writer>
+                    <Date>Release Date: 12 Nov 1990</Date>
+                    <length>Length: 5:25</length>
+                    <MusicVideo>Music Video: Yes</MusicVideo>
+                    <Tiktok>
+                        Tiktok: Yes
+                    </Tiktok>
+                </SongDescription>
+            </song>
+        </songs>
+    </Collections>
+    <footer id="Footer">
+        <![CDATA[ In Colaboration With Anish Sherchan & Sherchan Musics All Rights Reserved  ©]]>
+    </footer>
+</Mystore>

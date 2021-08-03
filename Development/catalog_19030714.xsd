@@ -1,0 +1,137 @@
+<!-- Author Anish Sherchan
+uni id: 19030714
+-->
+<!-- Start of xsd file-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Mystore" type="MystoreType"/>
+  <xs:complexType name="StoredetailsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Storename">
+      </xs:element>
+      <xs:element type="xs:string" name="address_1">
+      </xs:element>
+      <xs:element type="xs:string" name="Phone_number">
+      </xs:element>
+      <xs:element type="xs:string" name="urls">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="logoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="barsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="home">
+      </xs:element>
+      <xs:element type="xs:string" name="shop"/>
+      <xs:element type="xs:string" name="seprator"/>
+      <xs:element type="xs:string" name="listen"/>
+      <xs:element type="xs:string" name="download"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="menusType">
+    <xs:sequence>
+      <xs:element type="logoType" name="logo">
+      </xs:element>
+      <xs:element type="xs:string" name="StoreName">
+      </xs:element>
+      <xs:element type="barsType" name="bars"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="headerType">
+    <xs:sequence>
+      <xs:element type="StoredetailsType" name="Storedetails"/>
+      <xs:element type="menusType" name="menus"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FiltersType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CoverType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="HeadType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SongDescriptionType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Songname"/>
+      <xs:element type="xs:string" name="Genre"/>
+      <xs:element type="xs:string" name="Director" minOccurs="0"/>
+      <xs:element type="xs:string" name="Producer"/>
+      <xs:element type="xs:string" name="band" minOccurs="0" />
+      <xs:element type="xs:string" name="Writer"/>
+      <xs:element type="xs:string" name="Singer" minOccurs="0" />
+      <xs:element type="xs:string" name="Date"/>
+      <xs:element type="xs:string" name="length"/>
+      <xs:element type="xs:string" name="MusicVideo" minOccurs="0" />
+      <xs:element type="xs:string" name="Website" minOccurs="0" />
+      <xs:element type="xs:string" name="Tiktok" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="songType">
+    <xs:sequence>
+      <xs:element type="CoverType" name="Cover">
+      </xs:element>
+      <xs:element type="HeadType" name="Head"/>
+      <xs:element type="SongDescriptionType" name="SongDescription">
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" />
+    <xs:attribute type="xs:string" name="views"/>
+    <xs:attribute type="xs:string" name="song_id" />
+    <xs:attribute type="xs:string" name="Listtype" />
+    <xs:attribute type="xs:string" name="Musictype"/>
+    <xs:attribute type="xs:byte" name="beatspermin"/>
+    <xs:attribute type="xs:string" name="rating"/>
+  </xs:complexType>
+  <xs:complexType name="songsType">
+    <xs:sequence>
+      <xs:element type="FiltersType" name="Filters" maxOccurs="unbounded" minOccurs="0">
+      </xs:element>
+      <xs:element type="songType" name="song" maxOccurs="unbounded" minOccurs="0">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CollectionsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Featuring">
+      </xs:element>
+      <xs:element type="songsType" name="songs">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="footerType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MystoreType">
+    <xs:sequence>
+      <xs:element type="headerType" name="header">
+      </xs:element>
+      <xs:element type="CollectionsType" name="Collections">
+      </xs:element>
+      <xs:element type="footerType" name="footer"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
